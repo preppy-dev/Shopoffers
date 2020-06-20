@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../img/bg.jpg") no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+/* global */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+/* header */
+.header {
+  padding-top: 7vh;
+}
+
+.sti {
+  color: #fff;
+}
+
+/* welcom text */
+.welcome {
+  margin-top: 7vh;
+  color: #fff;
+}
+
+/* button css */
+
+.btn {
+  font-size: 1rem;
+  color: #fff;
+  margin: 3vh;
+  border-radius: 2px;
+  width: 250px;
+  height: 9vh;
+  background-color: #af4079;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #9b2c65;
+}
+
+/* countdown js css */
+.countdown {
+  margin-top: 5vh;
+}
+
+.countdown ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-right: 8vh;
+}
+.countdown ul li {
+  margin: 0 4vh 0 4vh;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 19vh;
+  width: 19vh;
+  padding-top: 5.4vh;
+}
+
+/* On screens that are 992px or less */
+@media screen and (max-width: 992px) {
+  .countdown ul li {
+    margin: 4vh;
+  }
+}
+
+/* On screens that are 600px or less,  */
+@media screen and (max-width: 600px) {
+  .countdown ul li {
+    margin: 4vh;
+  }
+  .countdown ul {
+    padding-right: 7vh;
+  }
+}
